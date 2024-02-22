@@ -1,0 +1,30 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body{
+	padding: 0px;
+	margin:0px;
+	width: 100vw;
+	display:flex;
+	justify-content: center;
+}
+
+header{
+width: 1400px;
+height: 600px;
+background: linear-gradient(to right, hsl(13, 100%, 72%) , hsl(353, 100%, 62%));
+border-bottom-left-radius: 90px;
+}
+
+#intro_img{
+	width:3000px;
+}
+
+#header-main{
+	width: inherit;
+	height: inherit;
+	background-image:url("../images/bg-pattern-intro-desktop.svg");
+	background-position:25% 50%;
+	background-size: 3000px;
+	background-repeat: no-repeat;
+}
