@@ -6,11 +6,12 @@ body{
 	margin:0px;
 	width: 100vw;
 	display:flex;
+	flex-direction: column;
 	justify-content: center;
 }
 
 header{
-width: 1400px;
+width: 1440px;
 height: 600px;
 background: linear-gradient(to right, hsl(13, 100%, 72%) , hsl(353, 100%, 62%));
 border-bottom-left-radius: 90px;
@@ -86,6 +87,39 @@ header > div{
 	margin: auto 7px;
 }
 
+#section-designed{
+	width: 1440px;
+	height: 960px;
+	display:flex;
+	flex-direction:column;
+	background-image:url("../images/illustration-editor-desktop.svg");
+	background-repeat: no-repeat;
+	background-position: 150% 60%;
+	background-size: 880px;
+}
+
+#section-designed > div{
+	font-family: 'Overpass';
+}
+
+#designed-title{
+	width: inherit;
+	align-self: center;
+	text-align: center;
+	color: hsl(208, 49%, 24%);
+	font-size: 28pt;
+	font-weight: 600;
+	margin-top: 150px;
+}
+
+#designed-content{
+	width: 550px;
+	align-self: flex-start;
+	margin-left: 170px;
+	margin-top: 70px;
+}
+
+
 .menuText{
 	font-family: 'Ubuntu';
 	font-weight: 500;
@@ -103,7 +137,6 @@ header > div{
 }
 
 .headerTitle{
-	font: 600 40pt;
 	font-size: 40pt;
 	font-weight: 600;
 }
@@ -111,6 +144,7 @@ header > div{
 .headerContent{
 	font-size: 14pt;
 	font-weight: 300;
+	
 }
 
 .menuBt{
@@ -120,4 +154,16 @@ header > div{
 	border-radius: 22px;
 	font-weight: 600;
 	font-size: 12pt;
+}
+
+.designed-title{
+	color: hsl(208, 49%, 24%);
+	font-size: 20pt;
+	font-weight: 600;
+}
+
+.designed-text{
+	color:hsl(207, 13%, 34%);
+	font-size: 14pt;
+	font-weight: 300;
 }
