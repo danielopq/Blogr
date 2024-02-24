@@ -176,6 +176,25 @@ header > div{
 	margin-right: 175px;
 }
 
+#footer{
+	width: 1440px;
+	height: 360px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	background-color: hsl(240, 10%, 16%);
+	border-radius: 0px 90px 0px 0px;
+}
+
+#footer > div{
+	width: 280px;
+	height: 240px;
+	text-align: left;
+	font-family: 'Ubuntu';
+	font-size: 11pt;
+}
+
 .menuText{
 	font-family: 'Ubuntu';
 	font-weight: 500;
@@ -235,3 +254,14 @@ header > div{
 	font-weight: 300;
 	line-height: 1.8;
 }
+
+.footer-section{
+	font-weight: 500;
+	color:white;
+}
+
+.footer-link{
+	font-weight: 400;
+	color:hsl(240, 2%, 79%);
+}
+
