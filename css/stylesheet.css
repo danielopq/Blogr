@@ -31,7 +31,7 @@ header > div{
 
 #header-menu{
 	width: inherit;
-	height: 65px;
+	height: 45px;
 	display:flex;
 	flex-direction: row;
 	align-items: center;
@@ -49,25 +49,17 @@ header > div{
 	margin-right: 30px;
 }
 
-#signup-bt{
-	font-size: 12pt;
-	color:hsl(356, 100%, 66%);
-	border: none;
-	background-color: white;
-}
-
-#start-bt{
-	font-size: 12pt;
-	color:hsl(356, 100%, 66%);
-	border: none;
-	background-color: white;
-}
-
 #learn-bt{
-	font-size: 12pt;
 	color:white;
 	border: solid 1px;
 	background-color: hsla(356, 100%, 66%, 0);
+}
+
+#learn-bt:hover{
+	cursor: pointer;
+	color:hsla(356, 100%, 66%,0.8);
+	border: solid 1px;
+	background-color:white;
 }
 
 #header-content{
@@ -206,6 +198,14 @@ header > div{
 	margin:auto 20px;
 }
 
+.menuSectionBt:hover{
+	cursor:pointer;
+	text-decoration: underline;
+}
+
+.arrow{
+	margin-left: 7px;
+}
 .headerText{
 	font-family: 'Overpass';
 	color:white;
@@ -214,6 +214,29 @@ header > div{
 .headerTitle{
 	font-size: 40pt;
 	font-weight: 600;
+}
+
+.submenu{
+	width: 170px;
+	z-index: 10;
+	position:absolute;
+	background-color: white;
+	border-radius: 5px;
+	text-align: left;
+	margin-top: 25px;
+}
+
+.submenu-link{
+	margin-left: 25px;
+	color:hsl(237, 23%, 32%);
+	font-family: 'Ubuntu';
+	font-size: 11pt;
+	font-weight: 400;
+}
+
+.submenu-link:hover{
+	cursor:pointer;
+	font-weight: 700;
 }
 
 .headerContent{
@@ -229,6 +252,18 @@ header > div{
 	border-radius: 22px;
 	font-weight: 600;
 	font-size: 12pt;
+}
+
+.signup-start-bt{
+	color:hsl(356, 100%, 66%);
+	border: none;
+	background-color: white;
+}
+
+.signup-start-bt:hover{
+	cursor:pointer;
+	color:white;
+	background-color: hsla(0, 0%, 100%,0.2);
 }
 
 .default-title{
@@ -263,5 +298,10 @@ header > div{
 .footer-link{
 	font-weight: 400;
 	color:hsl(240, 2%, 79%);
+}
+
+.footer-link:hover{
+	cursor:pointer;
+	text-decoration: underline;
 }
 
