@@ -91,10 +91,7 @@ header > div{
 	height: 960px;
 	display:flex;
 	flex-direction:column;
-	background-image:url("../images/illustration-editor-desktop.svg");
-	background-repeat: no-repeat;
-	background-position: 150% 60%;
-	background-size: 880px;
+	background: url("../images/illustration-editor-desktop.svg") 150% 60% / 880px no-repeat;
 }
 
 #section-designed > div{
@@ -344,6 +341,21 @@ header > div{
 		text-align: center;
 	}
 	
+	#section-designed{
+		width: 480px;
+		height: 1850px;
+		background: url("../images/illustration-editor-mobile.svg") 100% 250px / 480px no-repeat;
+	}
+	
+	#designed-title{
+		font-size: 27pt;
+	}
+	
+	#designed-content{
+		width: 400px;
+		margin: 460px auto auto auto;
+		text-align: center;
+	}
 	
 	.desktopMenuBar{
 		display: none;
@@ -354,6 +366,14 @@ header > div{
 	}
 
 	.headerContent{
+		font-size: 18pt;
+	}
+	
+	.default-title{
+		font-size: 26pt;
+	}
+
+	.default-text{
 		font-size: 18pt;
 	}
 }
