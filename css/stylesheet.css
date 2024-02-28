@@ -10,6 +10,20 @@ body{
 	align-items: center;
 }
 
+a{
+	text-decoration: none;
+}
+
+a:link, :visited,:active{
+	text-decoration: none;
+	font-weight: 400;
+}
+
+a:hover{
+	text-decoration: underline;
+	color:color:hsl(240, 2%, 79%);
+}
+
 header{
 	width: 1440px;
 	height: 600px;
@@ -176,18 +190,17 @@ header > div{
 	height: 360px;
 	display: flex;
 	flex-direction: row;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
 	background-color: hsl(240, 10%, 16%);
 	border-radius: 0px 90px 0px 0px;
 }
 
-#footer > div{
+#footer-logo{
 	width: 280px;
 	height: 240px;
-	text-align: left;
-	font-family: 'Ubuntu';
-	font-size: 11pt;
+	text-align: center;
+	margin-top: 50px;
 }
 
 .menuText{
@@ -290,8 +303,17 @@ header > div{
 }
 
 .footer-section{
+	width: 280px;
+	text-align: center;
+	font-family: 'Ubuntu';
+	font-size: 11pt;
+	margin-top: 50px;
+}
+
+.footer-sectionTitle{
 	font-weight: 500;
 	color:white;
+	margin-bottom: 30px;
 }
 
 .footer-link{
@@ -299,10 +321,6 @@ header > div{
 	color:hsl(240, 2%, 79%);
 }
 
-.footer-link:hover{
-	cursor:pointer;
-	text-decoration: underline;
-}
 
 @media screen and (max-width: 480px) {
 	header{
@@ -315,11 +333,11 @@ header > div{
 	}
 	
 	#header-menu{
-	width: inherit;
-	height: 45px;
-	align-items: center;
-	justify-content: center;
-	margin-top: 50px;
+		width: inherit;
+		height: 45px;
+		align-items: center;
+		justify-content: center;
+		margin-top: 50px;
 	}
 	#header-menu > div{
 		width:215px;
@@ -386,8 +404,6 @@ header > div{
 	#section-final{
 		width: 480px;
 		height: 1200px;
-		justify-content: center;
-		align-items: center;
 		background: url("../images/illustration-laptop-mobile.svg") center 0% / 110% no-repeat;
 		margin-top: 50px;
 	}
@@ -399,6 +415,18 @@ header > div{
 		text-align: center;
 	}
 	
+	#footer{
+		width: 480px;
+		height: 900px;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#footer-logo{
+		height: 90px;
+		margin-top: 0px;
+	}
+
 	.desktopMenuBar{
 		display: none;
 	}
@@ -430,5 +458,15 @@ header > div{
 		font-weight: 300;
 		line-height: 1.8;
 	}
+	
+	.footer-section{
+		font-size: 12pt;
+		margin-top: 0px;
+	}
+	
+	.footer-sectionTitle{
+		margin-top: 30px;
+	}
+
 }
 
