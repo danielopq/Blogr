@@ -120,9 +120,7 @@ header > div{
 	width: 1440px;
 	height: 400px;
 	border-radius: 0px 90px 0px 90px;
-
-	/*background: url("../images/bg-pattern-intro-desktop.svg") 25% 50% / 3000px no-repeat;*/
-	background: linear-gradient(to right, hsl(237, 17%, 21%) , hsl(237, 23%, 32%))
+	background: linear-gradient(to right, hsl(237, 17%, 21%) , hsl(237, 23%, 32%));
 }
 
 #stateOf-container{
@@ -146,6 +144,7 @@ header > div{
 #stateOf-image{
 	width: 600px;
 }
+
 #stateOf-parag{
 	display: flex;
 	flex-direction: column;
@@ -343,8 +342,8 @@ header > div{
 	
 	#section-designed{
 		width: 480px;
-		height: 1850px;
-		background: url("../images/illustration-editor-mobile.svg") 100% 250px / 480px no-repeat;
+		height: 1950px;
+		background: url("../images/illustration-editor-mobile.svg") center 250px / 480px no-repeat;
 	}
 	
 	#designed-title{
@@ -355,6 +354,33 @@ header > div{
 		width: 400px;
 		margin: 460px auto auto auto;
 		text-align: center;
+	}
+	
+	#section-stateOf{
+		width: 480px;
+		height: 825px;
+		
+	}
+	
+	#stateOf-container{
+		width: inherit;
+		justify-content: flex-end;
+		flex-direction: column;
+		background: url("../images/bg-pattern-circles.svg") 50% -240px / 600px no-repeat;
+		
+	}
+	
+	#stateOf-container > div{
+		width: 400px;
+		text-align: center;
+	}
+	
+	#stateOf-parag{
+		margin-bottom: 100px;
+	}
+	
+	#stateOf-image > img{
+		width: 400px;
 	}
 	
 	.desktopMenuBar{
@@ -375,6 +401,18 @@ header > div{
 
 	.default-text{
 		font-size: 18pt;
+	}
+	
+	.stateOf-title{
+		font-size: 28pt;
+		font-weight: 600;
+		line-height: 1.1;
+	}
+
+	.stateOf-text{
+		font-size: 18pt;
+		font-weight: 300;
+		line-height: 1.8;
 	}
 }
 
