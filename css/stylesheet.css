@@ -383,6 +383,22 @@ header > div{
 		width: 400px;
 	}
 	
+	#section-final{
+		width: 480px;
+		height: 1200px;
+		justify-content: center;
+		align-items: center;
+		background: url("../images/illustration-laptop-mobile.svg") center 0% / 110% no-repeat;
+		margin-top: 50px;
+	}
+
+	#final-content{
+		width: 410px;
+		height: 420px;
+		margin: 370px auto auto auto;
+		text-align: center;
+	}
+	
 	.desktopMenuBar{
 		display: none;
 	}
