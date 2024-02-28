@@ -21,7 +21,7 @@ a:link, :visited,:active{
 
 a:hover{
 	text-decoration: underline;
-	color:color:hsl(240, 2%, 79%);
+	color:hsl(240, 2%, 79%);
 }
 
 header{
@@ -59,8 +59,44 @@ header > div{
 	margin-right: 35px;
 }
 
-#menu-hamburger{
+#menu-top{
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#top-hamburger{
 	display:none;
+}
+
+#menu-mobile-menu{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	width:430px;
+	z-index: 3;
+	border-radius: 5px;
+	top: 130px;
+	background-color: white;
+}
+
+#mb-menu-login{
+	width: 380px;
+	height: 60px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	font-family: 'Overpass';
+	font-size: 14pt;
+	font-weight: 600;
+	color: hsl(208, 49%, 24%);
+	border-top: solid 1px #efeff1;
+	margin: 25px auto;
+}
+
+#mb-menu-signup{
+	margin: 20px auto 40px auto;
 }
 
 #menu-login{
@@ -223,6 +259,36 @@ header > div{
 	margin-left: 7px;
 }
 
+.mb-menu-section{
+	font-family: 'Overpass';
+	font-weight: 600;
+	font-size: 15pt;
+	color: hsl(208, 49%, 24%);
+	margin: 30px auto;
+	text-align: center;
+}
+
+.mb-menu-subsec{
+	width: 380px;
+	display: block;
+	background-color: #efeff1;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.mb-submenu-link{
+	margin-left: 25px;
+	color:#5d646c;
+	font-family: 'Overpass';
+	font-size: 12pt;
+	font-weight: 400;
+}
+
+.mb-submenu-link:hover{
+	cursor:pointer;
+	font-weight: 600;
+}
+
 .submenu{
 	width: 170px;
 	display: none;
@@ -272,10 +338,22 @@ header > div{
 	background-color: white;
 }
 
+.mb-signup-start-bt{
+	color:white;
+	border: none;
+	background-color: hsl(356, 100%, 66%);
+}
+
 .signup-start-bt:hover{
 	cursor:pointer;
 	color:white;
 	background-color: hsla(0, 0%, 100%,0.2);
+}
+
+.mb-signup-start-bt:hover{
+	cursor:pointer;
+	color:white;
+	background-color: hsla(356, 100%, 66%,0.5);
 }
 
 .default-title{
@@ -333,19 +411,24 @@ header > div{
 	}
 	
 	#header-menu{
+		flex-direction: column;
 		width: inherit;
 		height: 45px;
 		align-items: center;
 		justify-content: center;
 		margin-top: 50px;
 	}
-	#header-menu > div{
-		width:215px;
+	
+	#menu-top{
+		width: 400px;
 	}
-	#menu-logo{
+	
+	#top-logo{
+		width: 368px;
 		text-align: left;
 	}
-	#menu-hamburger{
+	
+	#top-hamburger{
 		display: block;
 		text-align: right;
 	}
@@ -467,6 +550,5 @@ header > div{
 	.footer-sectionTitle{
 		margin-top: 30px;
 	}
-
 }
 
