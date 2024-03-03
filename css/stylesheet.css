@@ -79,6 +79,7 @@ header > div{
 	border-radius: 5px;
 	top: 130px;
 	background-color: white;
+	box-shadow: 0px 20px 40px #adadad;
 }
 
 #mobile-menu-icon:hover{
