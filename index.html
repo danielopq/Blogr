@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/stylesheet.css">
+<script src="JS/mobileMenu.js"></script>
 <title>Blogr</title>
 </head>
 <body>
@@ -15,26 +16,26 @@
 		<div id="header-menu">
 			<div id="menu-top">
 				<div id="top-logo"><img src="images/logo.svg" alt="" id="logo-img"/></div>
-				<div id="top-hamburger"><img src="images/icon-hamburger.svg" alt=""/></div>
+				<div id="top-hamburger"><img src="images/icon-hamburger.svg" alt="" id="mobile-menu-icon"/></div>
 			</div>
 			<div id="menu-mobile-menu">
-				<div class="mb-menu-section">Product<img src="images/icon-arrow-dark.svg" alt="" class="arrow"/></div>
-				<div id="mb-product" class="mb-menu-subsec">
+				<div id="mb-product" class="mb-menu-section">Product<img id="mb-product-arrow" src="images/icon-arrow-dark.svg" alt="" class="arrow-inactive"/></div>
+				<div id="mb-subproduct" class="mb-menu-subsec">
 					<p class="mb-submenu-link">Overview</p>
 					<p class="mb-submenu-link">Pricing</p>
 					<p class="mb-submenu-link">Marketplace</p>
 					<p class="mb-submenu-link">Features</p>
 					<p class="mb-submenu-link">Integrations</p>
 				</div>
-				<div class="mb-menu-section">Company<img src="images/icon-arrow-dark.svg" alt="" class="arrow"/></div>
-				<div id="mb-company" class="mb-menu-subsec">
+				<div id="mb-company" class="mb-menu-section">Company<img id="mb-company-arrow" src="images/icon-arrow-dark.svg" alt="" class="arrow-inactive"/></div>
+				<div id="mb-subcompany" class="mb-menu-subsec">
 					<p class="mb-submenu-link">About</p>
 					<p class="mb-submenu-link">Team</p>
 					<p class="mb-submenu-link">Blog</p>
 					<p class="mb-submenu-link">Careers</p>
 				</div>
-				<div class="mb-menu-section">Connect<img src="images/icon-arrow-dark.svg" alt="" class="arrow"/></div>
-				<div id="mb-connect" class="mb-menu-subsec">
+				<div id="mb-connect" class="mb-menu-section">Connect<img id="mb-connect-arrow" src="images/icon-arrow-dark.svg" alt="" class="arrow-inactive"/></div>
+				<div id="mb-subconnect" class="mb-menu-subsec">
 					<p class="mb-submenu-link">Contact</p>
 					<p class="mb-submenu-link">Newsletter</p>
 					<p class="mb-submenu-link">Linkedin</p>
@@ -45,8 +46,8 @@
 				</div>
 			</div>
 			<div class="desktopMenuBar">
-				<div class="menuText menuSectionBt" id="menu-product">Product<img src="images/icon-arrow-light.svg" alt="" class="arrow"/></div>
-				<div class="submenu">
+				<div class="menuText menuSectionBt" id="menu-product">Product<img id="menu-product-arrow" src="images/icon-arrow-light.svg" alt="" class="arrow-inactive"/></div>
+				<div id="submenu-product" class="submenu">
 					<p class="submenu-link">Overview</p>
 					<p class="submenu-link">Pricing</p>
 					<p class="submenu-link">Marketplace</p>
@@ -55,8 +56,8 @@
 				</div>
 			</div>
 			<div class="desktopMenuBar">
-				<div class="menuText menuSectionBt" id="menu-company">Company<img src="images/icon-arrow-light.svg" alt="" class="arrow"/></div>
-				<div class="submenu">
+				<div class="menuText menuSectionBt" id="menu-company">Company<img id="menu-company-arrow" src="images/icon-arrow-light.svg" alt="" class="arrow-inactive"/></div>
+				<div id="submenu-company" class="submenu">
 					<p class="submenu-link">About</p>
 					<p class="submenu-link">Team</p>
 					<p class="submenu-link">Blog</p>
@@ -64,8 +65,8 @@
 				</div>
 			</div>
 			<div class="desktopMenuBar">
-				<div class="menuText menuSectionBt" id="menu-connect">Connect<img src="images/icon-arrow-light.svg" alt="" class="arrow"/></div>
-				<div class="submenu">
+				<div class="menuText menuSectionBt" id="menu-connect">Connect<img id="menu-connect-arrow" src="images/icon-arrow-light.svg" alt="" class="arrow-inactive"/></div>
+				<div id="submenu-connect" class="submenu">
 					<p class="submenu-link">Contact</p>
 					<p class="submenu-link">Newsletter</p>
 					<p class="submenu-link">Linkedin</p>
