@@ -17,8 +17,8 @@ Frontend development for a blog publishing platform. It is optimized for both de
 
 ### Screenshot
 
-- Desktop version: [https://github.com/danielopq/Blogr/main/screenshots/desktop.jpg]
-- Mobile version: [https://github.com/danielopq/Blogr/main/screenshots/mobile.jpg]
+- Desktop version: [https://github.com/danielopq/Blogr/blob/main/screenshots/desktop.jpg]
+- Mobile version: [https://github.com/danielopq/Blogr/blob/main/screenshots/mobile.jpg]
 
 
 ### Links
