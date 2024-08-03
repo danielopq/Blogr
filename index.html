@@ -1,122 +1,160 @@
 <!doctype html>
-<html>
+<html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/stylesheet.css">
-<script src="JS/mobileMenu.js"></script>
-<title>Blogr</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<script src="JS/mobileMenu.js"></script>
+	<title>Blogr</title>
 </head>
+
 <body>
+	<!-- ####################################### HEADER ####################################### -->
 	<header>
-	<div id="header-main">
-		<div id="header-menu">
-			<div id="menu-top">
-				<div id="top-logo"><img src="images/logo.svg" alt="" id="logo-img"/></div>
-				<div id="top-hamburger"><img src="images/icon-hamburger.svg" alt="" id="mobile-menu-icon"/></div>
+		<div id="header-main">
+			<div id="header-menu">
+				<div id="menu-top">
+					<div id="top-logo"><img src="images/logo.svg" alt="" id="logo-img" /></div>
+					<div id="top-hamburger"><img src="images/icon-hamburger.svg" alt="" id="mobile-menu-icon" /></div>
+				</div>
+				<div id="menu-mobile-menu">
+					<div id="mb-product" class="mb-menu-section">Product<img id="mb-product-arrow"
+							src="images/icon-arrow-dark.svg" alt="" class="arrow-inactive" /></div>
+					<div id="mb-subproduct" class="mb-menu-subsec">
+						<p class="mb-submenu-link">Overview</p>
+						<p class="mb-submenu-link">Pricing</p>
+						<p class="mb-submenu-link">Marketplace</p>
+						<p class="mb-submenu-link">Features</p>
+						<p class="mb-submenu-link">Integrations</p>
+					</div>
+					<div id="mb-company" class="mb-menu-section">Company<img id="mb-company-arrow"
+							src="images/icon-arrow-dark.svg" alt="" class="arrow-inactive" /></div>
+					<div id="mb-subcompany" class="mb-menu-subsec">
+						<p class="mb-submenu-link">About</p>
+						<p class="mb-submenu-link">Team</p>
+						<p class="mb-submenu-link">Blog</p>
+						<p class="mb-submenu-link">Careers</p>
+					</div>
+					<div id="mb-connect" class="mb-menu-section">Connect<img id="mb-connect-arrow"
+							src="images/icon-arrow-dark.svg" alt="" class="arrow-inactive" /></div>
+					<div id="mb-subconnect" class="mb-menu-subsec">
+						<p class="mb-submenu-link">Contact</p>
+						<p class="mb-submenu-link">Newsletter</p>
+						<p class="mb-submenu-link">Linkedin</p>
+					</div>
+					<div id="mb-menu-button">
+						<div id="mb-menu-login">Login</div>
+						<div id="mb-menu-signup"><input type="button" value="Sign Up" id="mb-signup-bt"
+								class="menuBt mb-signup-start-bt"></div>
+					</div>
+				</div>
+				<div class="desktopMenuBar">
+					<div class="menuText menuSectionBt" id="menu-product">Product<img id="menu-product-arrow"
+							src="images/icon-arrow-light.svg" alt="" class="arrow-inactive" /></div>
+					<div id="submenu-product" class="submenu">
+						<p class="submenu-link">Overview</p>
+						<p class="submenu-link">Pricing</p>
+						<p class="submenu-link">Marketplace</p>
+						<p class="submenu-link">Features</p>
+						<p class="submenu-link">Integrations</p>
+					</div>
+				</div>
+				<div class="desktopMenuBar">
+					<div class="menuText menuSectionBt" id="menu-company">Company<img id="menu-company-arrow"
+							src="images/icon-arrow-light.svg" alt="" class="arrow-inactive" /></div>
+					<div id="submenu-company" class="submenu">
+						<p class="submenu-link">About</p>
+						<p class="submenu-link">Team</p>
+						<p class="submenu-link">Blog</p>
+						<p class="submenu-link">Careers</p>
+					</div>
+				</div>
+				<div class="desktopMenuBar">
+					<div class="menuText menuSectionBt" id="menu-connect">Connect<img id="menu-connect-arrow"
+							src="images/icon-arrow-light.svg" alt="" class="arrow-inactive" /></div>
+					<div id="submenu-connect" class="submenu">
+						<p class="submenu-link">Contact</p>
+						<p class="submenu-link">Newsletter</p>
+						<p class="submenu-link">Linkedin</p>
+					</div>
+				</div>
+				<div class="desktopMenuBar menuText" id="menu-login">Login</div>
+				<div class="desktopMenuBar menuText" id="menu-signup"><input type="button" value="Sign Up"
+						id="signup-bt" class="menuBt signup-start-bt"></div>
 			</div>
-			<div id="menu-mobile-menu">
-				<div id="mb-product" class="mb-menu-section">Product<img id="mb-product-arrow" src="images/icon-arrow-dark.svg" alt="" class="arrow-inactive"/></div>
-				<div id="mb-subproduct" class="mb-menu-subsec">
-					<p class="mb-submenu-link">Overview</p>
-					<p class="mb-submenu-link">Pricing</p>
-					<p class="mb-submenu-link">Marketplace</p>
-					<p class="mb-submenu-link">Features</p>
-					<p class="mb-submenu-link">Integrations</p>
-				</div>
-				<div id="mb-company" class="mb-menu-section">Company<img id="mb-company-arrow" src="images/icon-arrow-dark.svg" alt="" class="arrow-inactive"/></div>
-				<div id="mb-subcompany" class="mb-menu-subsec">
-					<p class="mb-submenu-link">About</p>
-					<p class="mb-submenu-link">Team</p>
-					<p class="mb-submenu-link">Blog</p>
-					<p class="mb-submenu-link">Careers</p>
-				</div>
-				<div id="mb-connect" class="mb-menu-section">Connect<img id="mb-connect-arrow" src="images/icon-arrow-dark.svg" alt="" class="arrow-inactive"/></div>
-				<div id="mb-subconnect" class="mb-menu-subsec">
-					<p class="mb-submenu-link">Contact</p>
-					<p class="mb-submenu-link">Newsletter</p>
-					<p class="mb-submenu-link">Linkedin</p>
-				</div>
-				<div id="mb-menu-button">
-					<div id="mb-menu-login">Login</div>
-					<div id="mb-menu-signup"><input type="button" value ="Sign Up" id="mb-signup-bt" class="menuBt mb-signup-start-bt"></div>
-				</div>
+			<div id="header-content">
+				<h1 class="headerTitle">A modern publishing platform</h1>
+				<p class="headerContent">Grow your audience and build your online brand</p>
 			</div>
-			<div class="desktopMenuBar">
-				<div class="menuText menuSectionBt" id="menu-product">Product<img id="menu-product-arrow" src="images/icon-arrow-light.svg" alt="" class="arrow-inactive"/></div>
-				<div id="submenu-product" class="submenu">
-					<p class="submenu-link">Overview</p>
-					<p class="submenu-link">Pricing</p>
-					<p class="submenu-link">Marketplace</p>
-					<p class="submenu-link">Features</p>
-					<p class="submenu-link">Integrations</p>
-				</div>
+			<div id="header-buttons">
+				<input type="button" value="Start for Free" id="start-bt" class="menuBt signup-start-bt">
+				<input type="button" value="Learn More" id="learn-bt" class="menuBt">
 			</div>
-			<div class="desktopMenuBar">
-				<div class="menuText menuSectionBt" id="menu-company">Company<img id="menu-company-arrow" src="images/icon-arrow-light.svg" alt="" class="arrow-inactive"/></div>
-				<div id="submenu-company" class="submenu">
-					<p class="submenu-link">About</p>
-					<p class="submenu-link">Team</p>
-					<p class="submenu-link">Blog</p>
-					<p class="submenu-link">Careers</p>
-				</div>
-			</div>
-			<div class="desktopMenuBar">
-				<div class="menuText menuSectionBt" id="menu-connect">Connect<img id="menu-connect-arrow" src="images/icon-arrow-light.svg" alt="" class="arrow-inactive"/></div>
-				<div id="submenu-connect" class="submenu">
-					<p class="submenu-link">Contact</p>
-					<p class="submenu-link">Newsletter</p>
-					<p class="submenu-link">Linkedin</p>
-				</div>
-			</div>
-			<div class="desktopMenuBar menuText" id="menu-login">Login</div>
-			<div class="desktopMenuBar menuText" id="menu-signup"><input type="button" value ="Sign Up" id="signup-bt" class="menuBt signup-start-bt"></div>
 		</div>
-		<div id="header-content">
-			<p class="headerTitle">A modern publishing platform</p><p class="headerContent">Grow your audience and build your online brand</p>
-		</div>
-		<div id="header-buttons">
-			<input type="button" value="Start for Free" id="start-bt" class="menuBt signup-start-bt">
-			<input type="button" value="Learn More" id="learn-bt" class="menuBt">
-		</div>
-	</div>
 	</header>
-	<div id="section-designed">
-		<div id="designed-title">Designed for the future</div>
-		<div id="designed-content">
-		<p class="default-title">Introducing an extensible editor</p>
-		<p class="default-text">Blogr features exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p>
-		<br>
-		<p class="default-title">Robust content management</p>
-		<p class="default-text">Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format or flow.With this functionality, you're in full control.</p>
-	  </div>
-	</div>
-	<div id="section-stateOf">
-		<div id="stateOf-container">
-			<div id="stateOf-image"><img src="images/illustration-phones.svg" alt="" /></div>
-			<div id="stateOf-parag">
-				<p class="stateOf-title">State of the Art Infrastructure</p>
-				<p class="stateOf-text">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+
+	<!-- ####################################### MAIN ####################################### -->
+
+	<main>
+		<div id="section-designed">
+			<div id="designed-title">Designed for the future</div>
+			<div id="designed-content">
+				<p class="default-title">Introducing an extensible editor</p>
+				<p class="default-text">Blogr features exceedingly intuitive interface which lets you focus on one
+					thing:
+					creating content. The editor supports management of multiple blogs and allows easy manipulation of
+					embeds such as images, videos and Markdown. Extensibility with plugins and themes provide easy ways
+					to
+					add functionality or change the looks of a blog.</p>
+				<br>
+				<p class="default-title">Robust content management</p>
+				<p class="default-text">Flexible content management enables users to easily move through posts. Increase
+					the
+					usability of your blog by adding customized categories, sections, format or flow.With this
+					functionality, you're in full control.</p>
 			</div>
 		</div>
-	</div>
-	<div id="section-final">
-		<div id="final-content">
-			<p class="default-title">Free, open, simple</p>
-			<p class="default-text">
-				Blog is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highligting, RSS feeds, social media integration, third-party commenting tools and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
-			</p>
-			<br>
-			<p class="default-title">Powerful tooling</p>
-			<p class="default-text">Batteries included. We built a simple and straightforward CLI that makes customization and deployment a breeze, but capable of producing even the most complicated sites.
-			</p>
+		<div id="section-stateOf">
+			<div id="stateOf-container">
+				<div id="stateOf-image"><img src="images/illustration-phones.svg" alt="" /></div>
+				<div id="stateOf-parag">
+					<p class="stateOf-title">State of the Art Infrastructure</p>
+					<p class="stateOf-text">With reliability and speed in mind, worldwide data centers provide the
+						backbone
+						for ultra-fast connectivity. This ensures your site will load instantly, no matter where your
+						readers are, keeping your site competitive.</p>
+				</div>
+			</div>
 		</div>
-	</div>
-<div id="footer">
-		<div id="footer-logo"><img src="images/logo.svg" alt=""/></div>
+		<div id="section-final">
+			<div id="final-content">
+				<p class="default-title">Free, open, simple</p>
+				<p class="default-text">
+					Blog is a free and open source application backed by a large community of helpful developers. It
+					supports features such as code syntax highligting, RSS feeds, social media integration, third-party
+					commenting tools and works seamlessly with Google Analytics. The architecture is clean and is
+					relatively
+					easy to learn.
+				</p>
+				<br>
+				<p class="default-title">Powerful tooling</p>
+				<p class="default-text">Batteries included. We built a simple and straightforward CLI that makes
+					customization and deployment a breeze, but capable of producing even the most complicated sites.
+				</p>
+			</div>
+		</div>
+	</main>
+
+	<!-- ####################################### FOOTER ####################################### -->
+
+	<footer>
+		<div id="footer-logo"><img src="images/logo.svg" alt="" /></div>
 		<div class="footer-section">
 			<p class="footer-sectionTitle">Product</p>
 			<p><a href="#" class="footer-link">Overview</a></p>
@@ -138,6 +176,7 @@
 			<p class="footer-link"><a href="#" class="footer-link">Newsletter</a></p>
 			<p class="footer-link"><a href="#" class="footer-link">Linkedin</a></p>
 		</div>
-	</div>
+	</footer>
 </body>
+
 </html>

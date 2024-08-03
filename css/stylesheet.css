@@ -226,7 +226,7 @@ header > div{
 	margin-right: 175px;
 }
 
-#footer{
+footer{
 	width: 1440px;
 	height: 360px;
 	display: flex;
@@ -416,6 +416,9 @@ header > div{
 	color:hsl(240, 2%, 79%);
 }
 
+/*##################################################################################*/
+/*##############################  MOBILE VERSION  ##################################*/
+/*##################################################################################*/
 
 @media screen and (max-width: 480px) {
 	header{
@@ -515,7 +518,7 @@ header > div{
 		text-align: center;
 	}
 	
-	#footer{
+	footer{
 		width: 480px;
 		height: 900px;
 		flex-direction: column;
