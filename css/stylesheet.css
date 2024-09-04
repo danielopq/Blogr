@@ -85,7 +85,7 @@ p{
 }
 
 .menuBt {
-	width: 135px;
+	width: 137px;
 	height: 48px;
 	font: 600 16px 'Ubuntu-Bold';
 	border-radius: 28px;
@@ -112,7 +112,7 @@ header>div {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background: url("../images/bg-pattern-intro-desktop.svg") -440px -1350px / 3175px no-repeat; /* + > / - arriba */
+	background: url("../images/bg-pattern-intro-desktop.svg") -440px -1340px / 3175px no-repeat; /* + > / - arriba */
 }
 
 menu {
@@ -264,7 +264,7 @@ menu > div{
 #header-content h1{
 	width: 920px;
 	height: 98px;
-	font: 600 62px/98px 'Overpass-SemiBold';
+	font: 600 63px/98px 'Overpass-SemiBold';
 	letter-spacing: -2px;
 }
 
@@ -286,35 +286,34 @@ menu > div{
 
 /* ################### MAIN ################### */
 
+/* ------------- section-designed -------------- */
+
 #section-designed {
 	width: 1440px;
-	height: 960px;
+	height: 1110px;
 	display: flex;
 	flex-direction: column;
-	background: url("../images/illustration-editor-desktop.svg") 150% 60% / 880px no-repeat;
-}
-
-#section-designed>div {
-	font-family: 'Overpass';
-	line-height: 1.4;
+	background: url("../images/illustration-editor-desktop.svg") 835px 71px / 880px no-repeat;
 }
 
 #designed-title {
-	width: inherit;
+	height: 61px;
 	align-self: center;
 	text-align: center;
-	color: hsl(208, 49%, 24%);
-	font-size: 28pt;
-	font-weight: 600;
+	color: #1F3E5A;
+	font: 600 40px/61px 'Overpass-SemiBold';
+	letter-spacing: -1.2px;
 	margin-top: 150px;
 }
 
 #designed-content {
 	width: 550px;
 	align-self: flex-start;
-	margin-left: 170px;
-	margin-top: 70px;
+	margin-left: 165px;
+	margin-top: 93px;
 }
+
+/* -------------- section-stateOf -------------- */
 
 #section-stateOf {
 	width: 1440px;
@@ -369,6 +368,22 @@ menu > div{
 	font-family: 'Overpass';
 	line-height: 1.4;
 	margin-right: 175px;
+}
+
+.default-title {
+	width: 540px;
+	height: 41px;
+	color: #1F3E5A;
+	font: 600 28px/28px 'Overpass-SemiBold';
+	margin-bottom: 16px;
+}
+
+.default-text {
+	width: 540px;
+	margin-bottom: 64px;
+	color: hsl(207, 13%, 34%);
+	font: 300 16px/28px 'Overpass-Light';
+	letter-spacing: 0.5px;
 }
 
 /* ################### FOOTER ################### */
@@ -465,18 +480,6 @@ footer {
 	cursor: pointer;
 	color: white;
 	background-color: hsla(356, 100%, 66%, 0.5);
-}
-
-.default-title {
-	color: hsl(208, 49%, 24%);
-	font-size: 20pt;
-	font-weight: 600;
-}
-
-.default-text {
-	color: hsl(207, 13%, 34%);
-	font-size: 13pt;
-	font-weight: 300;
 }
 
 .stateOf-title {
