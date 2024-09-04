@@ -112,7 +112,7 @@ header>div {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background: url("../images/bg-pattern-intro-desktop.svg") -455px -1375px / 3250px no-repeat; /* + > / - arriba */
+	background: url("../images/bg-pattern-intro-desktop.svg") -440px -1350px / 3175px no-repeat; /* + > / - arriba */
 }
 
 menu {
@@ -131,7 +131,7 @@ menu > div{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	font: 400 16px 'Ubuntu-Regular';
+	font: 500 16px 'Ubuntu-Medium';
 	color: white;
 }
 
@@ -147,18 +147,41 @@ menu > div{
 
 /* -------------- menu/desktop -------------- */
 
+#top-hamburger {
+	display: none;
+}
+
 #menuDesktop-sections{
 	width: 308px;
 	justify-content: space-between;
 }
 
+.submenu {
+	display: none;
+	z-index: 10;
+	position: absolute;
+	background-color: white;
+	border-radius: 5px;
+	text-align: left;
+	margin-top: 25px;
+	padding: 24px;
+	box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.24);
+}
+
+.submenu-link {
+	width: 120px;
+	color: hsl(237, 23%, 32%);
+	font: 400 15px/33px 'Ubuntu-Regular';
+}
+
+.submenu-link:hover {
+	cursor: pointer;
+	font-weight: 700;
+}
+
 #menu-login {
 	width: 212px;
 	justify-content: space-between;
-}
-
-#top-hamburger {
-	display: none;
 }
 
 .menuSectionBt {
@@ -174,6 +197,8 @@ menu > div{
 #menu-login{
 	margin-left: auto;
 }
+
+
 
 /* -------------- menu/mobile -------------- */
 
@@ -239,7 +264,7 @@ menu > div{
 #header-content h1{
 	width: 920px;
 	height: 98px;
-	font: 600 64px/98px 'Overpass-SemiBold';
+	font: 600 62px/98px 'Overpass-SemiBold';
 	letter-spacing: -2px;
 }
 
@@ -256,7 +281,7 @@ menu > div{
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	margin-top: 48px;
+	margin-top: 44px;
 }
 
 /* ################### MAIN ################### */
@@ -411,30 +436,6 @@ footer {
 .mb-submenu-link:hover {
 	cursor: pointer;
 	font-weight: 600;
-}
-
-.submenu {
-	width: 170px;
-	display: none;
-	z-index: 10;
-	position: absolute;
-	background-color: white;
-	border-radius: 5px;
-	text-align: left;
-	margin-top: 25px;
-}
-
-.submenu-link {
-	margin-left: 25px;
-	color: hsl(237, 23%, 32%);
-	font-family: 'Ubuntu';
-	font-size: 11pt;
-	font-weight: 400;
-}
-
-.submenu-link:hover {
-	cursor: pointer;
-	font-weight: 700;
 }
 
 .headerTitle {
