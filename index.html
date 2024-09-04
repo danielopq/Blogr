@@ -17,12 +17,52 @@
 	<!-- ####################################### HEADER ####################################### -->
 	<header>
 		<div id="header-main">
-			<div id="header-menu">
+			<menu>
 				<div id="menu-top">
-					<div id="top-logo"><img src="images/logo.svg" alt="" id="logo-img" /></div>
+					<div id="top-logo"></div>
 					<div id="top-hamburger"><img src="images/icon-hamburger.svg" alt="" id="mobile-menu-icon" /></div>
 				</div>
-				<div id="menu-mobile-menu">
+
+				<!-- -------------- desktop/menu -------------- -->
+
+				<div id="menuDesktop-sections">
+					<div>
+						<div class="menuSectionBt" id="menu-product">Product<img id="menu-product-arrow" src="images/icon-arrow-light.svg" alt="" class="arrow-inactive" /></div>
+						<div id="submenu-product" class="submenu">
+							<p class="submenu-link">Overview</p>
+							<p class="submenu-link">Pricing</p>
+							<p class="submenu-link">Marketplace</p>
+							<p class="submenu-link">Features</p>
+							<p class="submenu-link">Integrations</p>
+						</div>
+					</div>
+					<div>
+						<div class="menuSectionBt" id="menu-company">Company<img id="menu-company-arrow" src="images/icon-arrow-light.svg" alt="" class="arrow-inactive" /></div>
+						<div id="submenu-company" class="submenu">
+							<p class="submenu-link">About</p>
+							<p class="submenu-link">Team</p>
+							<p class="submenu-link">Blog</p>
+							<p class="submenu-link">Careers</p>
+						</div>
+					</div>
+					<div>
+						<div class="menuSectionBt" id="menu-connect">Connect<img id="menu-connect-arrow" src="images/icon-arrow-light.svg" alt="" class="arrow-inactive" /></div>
+						<div id="submenu-connect" class="submenu">
+							<p class="submenu-link">Contact</p>
+							<p class="submenu-link">Newsletter</p>
+							<p class="submenu-link">Linkedin</p>
+						</div>
+					</div>
+				</div>
+				<div id="menu-login">
+					<p>Login</p>
+					<input type="button" value="Sign Up" id="signup-bt" class="menuBt signup-start-bt">
+				</div>
+
+
+				<!-- -------------- mobile/menu -------------- -->
+
+				<div id="menuMobile">
 					<div id="mb-product" class="mb-menu-section">Product<img id="mb-product-arrow"
 							src="images/icon-arrow-dark.svg" alt="" class="arrow-inactive" /></div>
 					<div id="mb-subproduct" class="mb-menu-subsec">
@@ -53,44 +93,17 @@
 								class="menuBt mb-signup-start-bt"></div>
 					</div>
 				</div>
-				<div class="desktopMenuBar">
-					<div class="menuText menuSectionBt" id="menu-product">Product<img id="menu-product-arrow"
-							src="images/icon-arrow-light.svg" alt="" class="arrow-inactive" /></div>
-					<div id="submenu-product" class="submenu">
-						<p class="submenu-link">Overview</p>
-						<p class="submenu-link">Pricing</p>
-						<p class="submenu-link">Marketplace</p>
-						<p class="submenu-link">Features</p>
-						<p class="submenu-link">Integrations</p>
-					</div>
-				</div>
-				<div class="desktopMenuBar">
-					<div class="menuText menuSectionBt" id="menu-company">Company<img id="menu-company-arrow"
-							src="images/icon-arrow-light.svg" alt="" class="arrow-inactive" /></div>
-					<div id="submenu-company" class="submenu">
-						<p class="submenu-link">About</p>
-						<p class="submenu-link">Team</p>
-						<p class="submenu-link">Blog</p>
-						<p class="submenu-link">Careers</p>
-					</div>
-				</div>
-				<div class="desktopMenuBar">
-					<div class="menuText menuSectionBt" id="menu-connect">Connect<img id="menu-connect-arrow"
-							src="images/icon-arrow-light.svg" alt="" class="arrow-inactive" /></div>
-					<div id="submenu-connect" class="submenu">
-						<p class="submenu-link">Contact</p>
-						<p class="submenu-link">Newsletter</p>
-						<p class="submenu-link">Linkedin</p>
-					</div>
-				</div>
-				<div class="desktopMenuBar menuText" id="menu-login">Login</div>
-				<div class="desktopMenuBar menuText" id="menu-signup"><input type="button" value="Sign Up"
-						id="signup-bt" class="menuBt signup-start-bt"></div>
-			</div>
+			</menu>
+
+			<!-- -------------- header content -------------- -->
+
 			<div id="header-content">
 				<h1 class="headerTitle">A modern publishing platform</h1>
 				<p class="headerContent">Grow your audience and build your online brand</p>
 			</div>
+
+			<!-- -------------- header buttons -------------- -->
+
 			<div id="header-buttons">
 				<input type="button" value="Start for Free" id="start-bt" class="menuBt signup-start-bt">
 				<input type="button" value="Learn More" id="learn-bt" class="menuBt">

@@ -1,80 +1,129 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-body{
+
+/* ################### GENERAL ################### */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
 	padding: 0px;
-	margin:0px;
+	margin: 0px;
 	width: 100vw;
-	display:flex;
+	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-a{
+a {
 	text-decoration: none;
 }
 
-a:link, :visited,:active{
+a:link,
+:visited,
+:active {
 	text-decoration: none;
 	font-weight: 400;
 }
 
-a:hover{
+a:hover {
 	text-decoration: underline;
-	color:hsl(240, 2%, 79%);
+	color: hsl(240, 2%, 79%);
 }
 
-header{
+/* ################### HEADER ################### */
+
+header {
 	width: 1440px;
 	height: 600px;
-	background: linear-gradient(to right, hsl(13, 100%, 72%) , hsl(353, 100%, 62%));
-	border-bottom-left-radius: 90px;
+	background: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+	border-bottom-left-radius: 100px;
+	overflow: hidden;
 }
 
-header > div{
+header>div {
 	text-align: center;
 }
 
-#header-main{
+#header-main {
 	width: inherit;
 	height: inherit;
 	display: flex;
 	flex-direction: column;
-	background: url("../images/bg-pattern-intro-desktop.svg") 25% 50% / 3000px no-repeat;
-	border-bottom-left-radius: 90px;
+	align-items: center;
+	background: url("../images/bg-pattern-intro-desktop.svg") 25% 50% / 2241px no-repeat;
 }
 
-#header-menu{
-	width: inherit;
-	height: 45px;
-	display:flex;
+menu{
+	width: 1112px;
+	height: 48px;
+	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
+	padding: 0px;
 	margin-top: 50px;
 }
 
-#logo-img{
-	width: 100px;
-	margin-right: 35px;
-}
-
-#menu-top{
-	display:flex;
+menu > div{
+	height: inherit;
+	display: flex;
 	flex-direction: row;
 	align-items: center;
+	font: 500 16px 'Ubuntu';
+	color: white;
 }
 
-#top-hamburger{
-	display:none;
+#menu-top {
+	margin-right: 64px;
 }
 
-#menu-mobile-menu{
+#top-logo {
+	width: 101px;
+	height: 40px;
+	background: url("../images/logo.svg") center/101px no-repeat;
+}
+
+/* -------------- menu/desktop -------------- */
+
+#menuDesktop-sections{
+	width: 308px;
+	justify-content: space-between;
+}
+
+#menu-login {
+	width: 212px;
+	justify-content: space-between;
+}
+
+#top-hamburger {
+	display: none;
+}
+
+.menuSectionBt {
+	height: 22px;
+	line-height: 22px;
+}
+
+.menuSectionBt:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+#menu-login{
+	margin-left: auto;
+}
+
+/* -------------- menu/mobile -------------- */
+
+#menuMobile {
 	display: none;
 	flex-direction: column;
 	align-items: center;
 	position: absolute;
-	width:430px;
+	width: 430px;
 	z-index: 3;
 	border-radius: 5px;
 	top: 130px;
@@ -82,11 +131,11 @@ header > div{
 	box-shadow: 0px 20px 40px #adadad;
 }
 
-#mobile-menu-icon:hover{
+#mobile-menu-icon:hover {
 	cursor: pointer;
 }
 
-#mb-menu-login{
+#mb-menu-login {
 	width: 380px;
 	height: 60px;
 	display: flex;
@@ -100,61 +149,60 @@ header > div{
 	margin: 25px auto;
 }
 
-#mb-menu-signup{
+#mb-menu-signup {
 	margin: 20px auto 40px auto;
 }
 
-#menu-login{
-	margin-left: 400px;
-	margin-right: 30px;
-}
-
-#learn-bt{
-	color:white;
+#learn-bt {
+	color: white;
 	border: solid 1px;
 	background-color: hsla(356, 100%, 66%, 0);
 }
 
-#learn-bt:hover{
+#learn-bt:hover {
 	cursor: pointer;
-	color:hsla(356, 100%, 66%,0.8);
+	color: hsla(356, 100%, 66%, 0.8);
 	border: solid 1px;
-	background-color:white;
+	background-color: white;
 }
 
-#header-content{
+/* -------------- header/content -------------- */
+
+#header-content {
 	width: inherit;
 	height: 120px;
 	font-family: 'Overpass';
-	color:white;
+	color: white;
 	margin-top: 100px;
 	line-height: 0.3;
 }
 
-#header-buttons{
+#header-buttons {
 	width: inherit;
 	height: 45px;
 	margin-top: 70px;
 }
 
-#header-buttons > input{
+#header-buttons>input {
 	margin: auto 7px;
 }
 
-#section-designed{
+/* ################### MAIN ################### */
+
+#section-designed {
 	width: 1440px;
 	height: 960px;
-	display:flex;
-	flex-direction:column;
+	display: flex;
+	flex-direction: column;
 	background: url("../images/illustration-editor-desktop.svg") 150% 60% / 880px no-repeat;
 }
 
-#section-designed > div{
+#section-designed>div {
 	font-family: 'Overpass';
 	line-height: 1.4;
 }
 
-#designed-title{
+#designed-title {
 	width: inherit;
 	align-self: center;
 	text-align: center;
@@ -164,21 +212,21 @@ header > div{
 	margin-top: 150px;
 }
 
-#designed-content{
+#designed-content {
 	width: 550px;
 	align-self: flex-start;
 	margin-left: 170px;
 	margin-top: 70px;
 }
 
-#section-stateOf{
+#section-stateOf {
 	width: 1440px;
 	height: 400px;
 	border-radius: 0px 90px 0px 90px;
-	background: linear-gradient(to right, hsl(237, 17%, 21%) , hsl(237, 23%, 32%));
+	background: linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
 }
 
-#stateOf-container{
+#stateOf-container {
 	width: inherit;
 	height: inherit;
 	border-radius: inherit;
@@ -189,25 +237,25 @@ header > div{
 	background: url("../images/bg-pattern-circles.svg") -68% 82% / 1100px no-repeat;
 }
 
-#stateOf-container > div{
+#stateOf-container>div {
 	height: 550px;
 	font-family: 'Overpass';
 	color: white;
 	text-align: left;
 }
 
-#stateOf-image{
+#stateOf-image {
 	width: 600px;
 }
 
-#stateOf-parag{
+#stateOf-parag {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	width: 530px;
 }
 
-#section-final{
+#section-final {
 	width: 1440px;
 	height: 790px;
 	display: flex;
@@ -215,10 +263,10 @@ header > div{
 	justify-content: flex-end;
 	background: url("../images/illustration-laptop-desktop.svg") -68% 82% / 68% no-repeat;
 	margin-top: 110px;
-	
+
 }
 
-#final-content{
+#final-content {
 	width: 520px;
 	height: 420px;
 	font-family: 'Overpass';
@@ -226,7 +274,9 @@ header > div{
 	margin-right: 175px;
 }
 
-footer{
+/* ################### FOOTER ################### */
+
+footer {
 	width: 1440px;
 	height: 360px;
 	display: flex;
@@ -237,39 +287,23 @@ footer{
 	border-radius: 0px 90px 0px 0px;
 }
 
-#footer-logo{
+#footer-logo {
 	width: 280px;
 	height: 240px;
 	text-align: center;
 	margin-top: 50px;
 }
 
-.menuText{
-	font-family: 'Ubuntu';
-	font-weight: 500;
-	font-size: 11pt;
-	color:white;
-}
-
-.menuSectionBt{
-	margin:auto 20px;
-}
-
-.menuSectionBt:hover{
-	cursor:pointer;
-	text-decoration: underline;
-}
-
-.arrow-inactive{
+.arrow-inactive {
 	margin-left: 7px;
 }
 
-.arrow-active{
+.arrow-active {
 	margin-left: 7px;
 	transform: scaleY(-1);
 }
 
-.mb-menu-section{
+.mb-menu-section {
 	font-family: 'Overpass';
 	font-weight: 600;
 	font-size: 15pt;
@@ -278,11 +312,11 @@ footer{
 	text-align: center;
 }
 
-.mb-menu-section:hover{
+.mb-menu-section:hover {
 	cursor: pointer;
 }
 
-.mb-menu-subsec{
+.mb-menu-subsec {
 	width: 380px;
 	display: none;
 	background-color: #efeff1;
@@ -290,57 +324,58 @@ footer{
 	text-align: center;
 }
 
-.mb-menu-subsec{
+.mb-menu-subsec {
 	cursor: pointer;
 }
-.mb-submenu-link{
+
+.mb-submenu-link {
 	margin-left: 25px;
-	color:#5d646c;
+	color: #5d646c;
 	font-family: 'Overpass';
 	font-size: 12pt;
 	font-weight: 400;
 }
 
-.mb-submenu-link:hover{
-	cursor:pointer;
+.mb-submenu-link:hover {
+	cursor: pointer;
 	font-weight: 600;
 }
 
-.submenu{
+.submenu {
 	width: 170px;
 	display: none;
 	z-index: 10;
-	position:absolute;
+	position: absolute;
 	background-color: white;
 	border-radius: 5px;
 	text-align: left;
 	margin-top: 25px;
 }
 
-.submenu-link{
+.submenu-link {
 	margin-left: 25px;
-	color:hsl(237, 23%, 32%);
+	color: hsl(237, 23%, 32%);
 	font-family: 'Ubuntu';
 	font-size: 11pt;
 	font-weight: 400;
 }
 
-.submenu-link:hover{
-	cursor:pointer;
+.submenu-link:hover {
+	cursor: pointer;
 	font-weight: 700;
 }
 
-.headerTitle{
+.headerTitle {
 	font-size: 40pt;
 	font-weight: 600;
 }
 
-.headerContent{
+.headerContent {
 	font-size: 14pt;
 	font-weight: 300;
 }
 
-.menuBt{
+.menuBt {
 	width: 135px;
 	height: 45px;
 	font-family: 'Ubuntu';
@@ -349,55 +384,55 @@ footer{
 	font-size: 12pt;
 }
 
-.signup-start-bt{
-	color:hsl(356, 100%, 66%);
+.signup-start-bt {
+	color: hsl(356, 100%, 66%);
 	border: none;
 	background-color: white;
 }
 
-.mb-signup-start-bt{
-	color:white;
+.mb-signup-start-bt {
+	color: white;
 	border: none;
 	background-color: hsl(356, 100%, 66%);
 }
 
-.signup-start-bt:hover{
-	cursor:pointer;
-	color:white;
-	background-color: hsla(0, 0%, 100%,0.2);
+.signup-start-bt:hover {
+	cursor: pointer;
+	color: white;
+	background-color: hsla(0, 0%, 100%, 0.2);
 }
 
-.mb-signup-start-bt:hover{
-	cursor:pointer;
-	color:white;
-	background-color: hsla(356, 100%, 66%,0.5);
+.mb-signup-start-bt:hover {
+	cursor: pointer;
+	color: white;
+	background-color: hsla(356, 100%, 66%, 0.5);
 }
 
-.default-title{
+.default-title {
 	color: hsl(208, 49%, 24%);
 	font-size: 20pt;
 	font-weight: 600;
 }
 
-.default-text{
-	color:hsl(207, 13%, 34%);
+.default-text {
+	color: hsl(207, 13%, 34%);
 	font-size: 13pt;
 	font-weight: 300;
 }
 
-.stateOf-title{
+.stateOf-title {
 	font-size: 28pt;
 	font-weight: 600;
 	line-height: 0.1;
 }
 
-.stateOf-text{
+.stateOf-text {
 	font-size: 13pt;
 	font-weight: 300;
 	line-height: 1.8;
 }
 
-.footer-section{
+.footer-section {
 	width: 280px;
 	text-align: center;
 	font-family: 'Ubuntu';
@@ -405,15 +440,15 @@ footer{
 	margin-top: 50px;
 }
 
-.footer-sectionTitle{
+.footer-sectionTitle {
 	font-weight: 500;
-	color:white;
+	color: white;
 	margin-bottom: 30px;
 }
 
-.footer-link{
+.footer-link {
 	font-weight: 400;
-	color:hsl(240, 2%, 79%);
+	color: hsl(240, 2%, 79%);
 }
 
 /*##################################################################################*/
@@ -421,154 +456,154 @@ footer{
 /*##################################################################################*/
 
 @media screen and (max-width: 480px) {
-	header{
-	width: 480px;
+	header {
+		width: 480px;
 	}
-	
-	#header-main{
+
+	#header-main {
 		align-items: center;
 		background: url("../images/bg-pattern-intro-mobile.svg") 40% 35% / 1400px no-repeat;
 	}
-	
-	#header-menu{
+
+	menu {
 		flex-direction: column;
 		width: inherit;
 		height: 45px;
 		align-items: center;
 		justify-content: center;
-		margin-top: 50px;
+		margin: 50px 0px 0px;
+		padding:0px;
 	}
-	
-	#menu-top{
+
+	#menu-top {
 		width: 400px;
 	}
-	
-	#top-logo{
+
+	#top-logo {
 		width: 368px;
 		text-align: left;
 	}
-	
-	#top-hamburger{
+
+	#top-hamburger {
 		display: block;
 		text-align: right;
 	}
-	
-	#header-content{
+
+	#header-content {
 		width: 400px;
 		height: 250px;
 		margin-top: 40px;
 		line-height: 1.2;
 		text-align: center;
 	}
-	
-	#section-designed{
+
+	#section-designed {
 		width: 480px;
 		height: 1950px;
 		background: url("../images/illustration-editor-mobile.svg") center 250px / 480px no-repeat;
 	}
-	
-	#designed-title{
+
+	#designed-title {
 		font-size: 27pt;
 	}
-	
-	#designed-content{
+
+	#designed-content {
 		width: 400px;
 		margin: 460px auto auto auto;
 		text-align: center;
 	}
-	
-	#section-stateOf{
+
+	#section-stateOf {
 		width: 480px;
 		height: 825px;
-		
+
 	}
-	
-	#stateOf-container{
+
+	#stateOf-container {
 		width: inherit;
 		justify-content: flex-end;
 		flex-direction: column;
 		background: url("../images/bg-pattern-circles.svg") 50% -240px / 600px no-repeat;
-		
+
 	}
-	
-	#stateOf-container > div{
+
+	#stateOf-container>div {
 		width: 400px;
 		text-align: center;
 	}
-	
-	#stateOf-parag{
+
+	#stateOf-parag {
 		margin-bottom: 100px;
 	}
-	
-	#stateOf-image > img{
+
+	#stateOf-image>img {
 		width: 400px;
 	}
-	
-	#section-final{
+
+	#section-final {
 		width: 480px;
 		height: 1200px;
 		background: url("../images/illustration-laptop-mobile.svg") center 0% / 110% no-repeat;
 		margin-top: 50px;
 	}
 
-	#final-content{
+	#final-content {
 		width: 410px;
 		height: 420px;
 		margin: 370px auto auto auto;
 		text-align: center;
 	}
-	
-	footer{
+
+	footer {
 		width: 480px;
 		height: 900px;
 		flex-direction: column;
 		align-items: center;
 	}
 
-	#footer-logo{
+	#footer-logo {
 		height: 90px;
 		margin-top: 0px;
 	}
 
-	.desktopMenuBar{
+	#menuDesktop{
 		display: none;
 	}
-	
-	.headerTitle{
+
+	.headerTitle {
 		font-size: 32pt;
 	}
 
-	.headerContent{
+	.headerContent {
 		font-size: 18pt;
 	}
-	
-	.default-title{
+
+	.default-title {
 		font-size: 26pt;
 	}
 
-	.default-text{
+	.default-text {
 		font-size: 18pt;
 	}
-	
-	.stateOf-title{
+
+	.stateOf-title {
 		font-size: 28pt;
 		font-weight: 600;
 		line-height: 1.1;
 	}
 
-	.stateOf-text{
+	.stateOf-text {
 		font-size: 18pt;
 		font-weight: 300;
 		line-height: 1.8;
 	}
-	
-	.footer-section{
+
+	.footer-section {
 		font-size: 12pt;
 		margin-top: 0px;
 	}
-	
-	.footer-sectionTitle{
+
+	.footer-sectionTitle {
 		margin-top: 30px;
 	}
 }
-
