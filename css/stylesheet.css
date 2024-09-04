@@ -86,7 +86,7 @@ p{
 
 .menuBt {
 	width: 135px;
-	height: 45px;
+	height: 48px;
 	font: 600 16px 'Ubuntu-Bold';
 	border-radius: 28px;
 }
@@ -95,6 +95,8 @@ p{
 header {
 	width: 1440px;
 	height: 600px;
+	/* border: solid 1px red;
+	background-color: blue; */
 	background: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
 	border-bottom-left-radius: 100px;
 	overflow: hidden;
@@ -110,10 +112,10 @@ header>div {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background: url("../images/bg-pattern-intro-desktop.svg") 25% 50% / 2241px no-repeat;
+	background: url("../images/bg-pattern-intro-desktop.svg") -455px -1375px / 3250px no-repeat; /* + > / - arriba */
 }
 
-menu{
+menu {
 	width: 1112px;
 	height: 48px;
 	display: flex;
@@ -121,7 +123,7 @@ menu{
 	align-items: center;
 	justify-content: space-between;
 	padding: 0px;
-	margin-top: 59px;
+	margin: 59px 0px 0px;
 }
 
 menu > div{
@@ -129,7 +131,7 @@ menu > div{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	font: 600 16px 'Ubuntu-Bold';
+	font: 400 16px 'Ubuntu-Regular';
 	color: white;
 }
 
@@ -527,7 +529,7 @@ footer {
 		height: 45px;
 		align-items: center;
 		justify-content: center;
-		margin: 50px 0px 0px;
+		margin: 50px 0px 0px 0px;
 		padding:0px;
 	}
 
