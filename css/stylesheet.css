@@ -390,13 +390,11 @@ menu > div{
 
 #section-final {
 	width: 1440px;
-	height: 790px;
+	height: 1025px;
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-	background: url("../images/illustration-laptop-desktop.svg") -68% 82% / 68% no-repeat;
-	margin-top: 110px;
-
+	background: url("../images/illustration-laptop-desktop.svg") -279px 50% / 889px no-repeat;
 }
 
 #final-content {
