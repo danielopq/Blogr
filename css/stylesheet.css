@@ -369,12 +369,9 @@ menu > div{
 	color: white
 }
 
-#stateOf-container>div {
-	height: 500px;
-}
-
 #stateOf-image {
 	width: 472px;
+	height: 500px;
 	background: url("../images/illustration-phones.svg") center/472px no-repeat;
 	padding: 0px;
 	margin: 0px 98px 0px 165px;
@@ -383,12 +380,11 @@ menu > div{
 #stateOf-parag {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 }
 
 #stateOf-title{
 	height: 61px;
-	font: 400 40px/61px 'Overpass-Regular';
+	font: 400 40px/61px 'Overpass-SemiBold';
 	letter-spacing: -1.2px;
 }
 
@@ -397,7 +393,7 @@ menu > div{
 	height: 112px;
 	font: 300 16px/28px 'Overpass-Light';
 	letter-spacing: 0.5px;
-	margin-top: 16px;
+	margin-top: 5px;
 }
 
 /* -------------- section-final -------------- */
