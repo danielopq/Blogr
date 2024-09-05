@@ -161,7 +161,7 @@ menu>div {
 	justify-content: space-between;
 }
 
-#menuDesktop >div {
+#menuDesktop>div {
 	padding-top: 4px;
 }
 
@@ -536,15 +536,15 @@ footer>div {
 		margin: 56px 0px 0px;
 	}
 
-	#menuDesktop{
+	#menuDesktop {
 		display: none;
 	}
 
-	#menu-login{
+	#menu-login {
 		display: none;
 	}
 
-	#top-hamburger{
+	#top-hamburger {
 		display: block;
 	}
 
@@ -554,7 +554,6 @@ footer>div {
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
-		border: solid 1px red;
 	}
 
 	#top-logo {
@@ -562,6 +561,33 @@ footer>div {
 		height: 32px;
 		background: url("../images/logo.svg") center/82px no-repeat;
 	}
+
+	/* -------------- header/content -------------- */
+
+	#header-content {
+		width: 327px;
+		margin-top: 108px;
+	}
+
+	#header-content h1 {
+		width: inherit;
+		height: 110px;
+		font: 600 36px/1.5 'Overpass-SemiBold';
+		letter-spacing: -1.08px;
+		padding: 0px 10px;
+	}
+
+	#header-content p {
+		width: inherit;
+		height: 46px;
+		font: 300 18px/1.3 'Overpass-Light';
+	}
+
+	#header-buttons {
+		margin-top: 48px;
+	}
+
+
 
 	#section-designed {
 		width: 480px;
