@@ -4,49 +4,49 @@
 @font-face {
 	font-family: 'Overpass-Light';
 	src: url("../fonts/Overpass-Light.woff")format('woff');
-	font-style:normal;
+	font-style: normal;
 	font-weight: 300;
 }
 
 @font-face {
 	font-family: 'Overpass-Regular';
 	src: url("../fonts/Overpass-Regular.woff")format('woff');
-	font-style:normal;
+	font-style: normal;
 	font-weight: 400;
 }
 
 @font-face {
 	font-family: 'Overpass-SemiBold';
 	src: url("../fonts/Overpass-SemiBold.woff")format('woff');
-	font-style:normal;
+	font-style: normal;
 	font-weight: 600;
 }
 
 @font-face {
 	font-family: 'Ubuntu-Light';
 	src: url("../fonts/Ubuntu-Light.woff")format('woff');
-	font-style:normal;
+	font-style: normal;
 	font-weight: 300;
 }
 
 @font-face {
 	font-family: 'Ubuntu-Regular';
 	src: url("../fonts/Ubuntu-Regular.woff")format('woff');
-	font-style:normal;
+	font-style: normal;
 	font-weight: 400;
 }
 
 @font-face {
 	font-family: 'Ubuntu-Medium';
 	src: url("../fonts/Ubuntu-Medium.woff")format('woff');
-	font-style:normal;
+	font-style: normal;
 	font-weight: 500;
 }
 
 @font-face {
 	font-family: 'Ubuntu-Bold';
 	src: url("../fonts/Ubuntu-Bold.woff")format('woff');
-	font-style:normal;
+	font-style: normal;
 	font-weight: 700;
 }
 
@@ -77,17 +77,17 @@ a:hover {
 	text-decoration: underline;
 }
 
-h1{
+h1 {
 	padding: 0px;
 	margin: 0px;
 }
 
-p{
+p {
 	padding: 0px;
 	margin: 0px;
 }
 
-img{
+img {
 	display: block;
 	margin: 0px;
 }
@@ -98,6 +98,7 @@ img{
 	font: 600 16px 'Ubuntu-Bold';
 	border-radius: 28px;
 }
+
 /* ################### HEADER ################### */
 
 header {
@@ -133,7 +134,7 @@ menu {
 	margin: 59px 0px 0px;
 }
 
-menu > div{
+menu>div {
 	height: inherit;
 	display: flex;
 	flex-direction: row;
@@ -142,14 +143,11 @@ menu > div{
 	color: #FFFFFF;
 }
 
-#menu-top {
-	margin-right: 64px;
-}
-
 #top-logo {
 	width: 101px;
 	height: 40px;
 	background: url("../images/logo.svg") center/101px no-repeat;
+	margin-right: 64px;
 }
 
 /* -------------- menu/desktop -------------- */
@@ -158,12 +156,12 @@ menu > div{
 	display: none;
 }
 
-#menuDesktop-sections{
+#menuDesktop {
 	width: 308px;
 	justify-content: space-between;
 }
 
-#menuDesktop-sections > div{
+#menuDesktop >div {
 	padding-top: 4px;
 }
 
@@ -214,7 +212,7 @@ menu > div{
 	text-decoration: underline;
 }
 
-#menu-login{
+#menu-login {
 	margin-left: auto;
 }
 
@@ -281,14 +279,14 @@ menu > div{
 	text-align: center;
 }
 
-#header-content h1{
+#header-content h1 {
 	width: 920px;
 	height: 98px;
 	font: 400 64px/98px 'Overpass-Regular';
 	letter-spacing: -1.92px;
 }
 
-#header-content p{
+#header-content p {
 	width: 440px;
 	height: 31px;
 	font: 300 20px/31px 'Overpass-Light';
@@ -330,7 +328,7 @@ menu > div{
 	display: flex;
 	flex-direction: column;
 	background: url("../images/illustration-editor-desktop.svg") 830px 71px / 880px no-repeat;
-	
+
 }
 
 #designed-title {
@@ -382,13 +380,13 @@ menu > div{
 	flex-direction: column;
 }
 
-#stateOf-title{
+#stateOf-title {
 	height: 61px;
 	font: 400 40px/61px 'Overpass-Regular';
 	letter-spacing: -1.2px;
 }
 
-#stateOf-text{
+#stateOf-text {
 	width: 540px;
 	height: 112px;
 	font: 300 16px/28px 'Overpass-Light';
@@ -403,7 +401,7 @@ menu > div{
 	height: 1025px;
 	background: url("../images/illustration-laptop-desktop.svg") -279px 116px / 889px no-repeat;
 	padding: 307px 0px 0px 735px;
-	
+
 }
 
 #final-content {
@@ -427,7 +425,7 @@ footer {
 	padding: 70px 0px 0px 165px;
 }
 
-footer > div{
+footer>div {
 	width: 285px;
 	height: 219px;
 	color: white;
@@ -522,45 +520,47 @@ footer > div{
 /*##################################################################################*/
 
 @media screen and (max-width: 480px) {
-	header {
-		width: 480px;
-	}
 
-	#header-main {
-		align-items: center;
-		background: url("../images/bg-pattern-intro-mobile.svg") 40% 35% / 1400px no-repeat;
+
+	/* ################### HEADER ################### */
+
+
+	header {
+		width: 100vw;
+		height: 600px;
 	}
 
 	menu {
-		flex-direction: column;
-		width: inherit;
-		height: 45px;
-		align-items: center;
-		justify-content: center;
-		margin: 50px 0px 0px 0px;
-		padding:0px;
+		width: 327px;
+		height: 32px;
+		margin: 56px 0px 0px;
+	}
+
+	#menuDesktop{
+		display: none;
+	}
+
+	#menu-login{
+		display: none;
+	}
+
+	#top-hamburger{
+		display: block;
 	}
 
 	#menu-top {
-		width: 400px;
+		width: inherit;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		border: solid 1px red;
 	}
 
 	#top-logo {
-		width: 368px;
-		text-align: left;
-	}
-
-	#top-hamburger {
-		display: block;
-		text-align: right;
-	}
-
-	#header-content {
-		width: 400px;
-		height: 250px;
-		margin-top: 40px;
-		line-height: 1.2;
-		text-align: center;
+		width: 82px;
+		height: 32px;
+		background: url("../images/logo.svg") center/82px no-repeat;
 	}
 
 	#section-designed {
@@ -632,7 +632,7 @@ footer > div{
 		margin-top: 0px;
 	}
 
-	#menuDesktop{
+	#menuDesktop {
 		display: none;
 	}
 
