@@ -316,7 +316,7 @@ menu > div{
 
 .default-text {
 	width: 540px;
-	margin-bottom: 64px;
+	margin-bottom: 69px;
 	color: hsl(207, 13%, 34%);
 	font: 300 16px/28px 'Overpass-Light';
 	letter-spacing: 0.5px;
@@ -402,7 +402,7 @@ menu > div{
 	width: 1440px;
 	height: 1025px;
 	background: url("../images/illustration-laptop-desktop.svg") -279px 116px / 889px no-repeat;
-	padding: 304px 0px 0px 735px;
+	padding: 307px 0px 0px 735px;
 	
 }
 
