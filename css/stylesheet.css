@@ -587,23 +587,58 @@ footer>div {
 		margin-top: 48px;
 	}
 
+	/* ################### MAIN ################### */
 
+	main{
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.default-title {
+		width: 318px;
+		height: auto;
+		font: 600 28px/32px 'Overpass-SemiBold';
+	}
+
+	.default-text {
+		width: 318px;
+		margin-bottom: 40px;
+	}
+
+	/* ------------- section-designed -------------- */
 
 	#section-designed {
-		width: 480px;
-		height: 1950px;
-		background: url("../images/illustration-editor-mobile.svg") center 250px / 480px no-repeat;
+		width: 100vw;
+		height: 1262px;
+		display: flex;
+		flex-direction: column;
+		background: url("../images/illustration-editor-mobile.svg") 50% 181px / 326px no-repeat;
+		border: solid 1px red;
 	}
 
 	#designed-title {
-		font-size: 27pt;
+		width: 327px;
+		height: 43px;
+		font: 600 28px/43px 'Overpass-SemiBold';
+		letter-spacing: -0.84px;
+		margin-top: 100px;
 	}
 
 	#designed-content {
-		width: 400px;
-		margin: 460px auto auto auto;
-		text-align: center;
+		width: 540px;
+		margin-left: 165px;
+		margin-top: 98px;
 	}
+
+
+
+
+
+
+
+
 
 	#section-stateOf {
 		width: 480px;
