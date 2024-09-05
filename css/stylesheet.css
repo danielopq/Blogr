@@ -23,6 +23,13 @@
 }
 
 @font-face {
+	font-family: 'Ubuntu-Light';
+	src: url("../fonts/Ubuntu-Light.woff")format('woff');
+	font-style:normal;
+	font-weight: 300;
+}
+
+@font-face {
 	font-family: 'Ubuntu-Regular';
 	src: url("../fonts/Ubuntu-Regular.woff")format('woff');
 	font-style:normal;
@@ -131,7 +138,7 @@ menu > div{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	font: 500 16px 'Ubuntu-Medium';
+	font: 400 16px 'Ubuntu-Regular';
 	color: #FFFFFF;
 }
 
@@ -277,7 +284,7 @@ menu > div{
 #header-content h1{
 	width: 920px;
 	height: 98px;
-	font: 500 64px/98px 'Overpass-SemiBold';
+	font: 400 64px/98px 'Overpass-Regular';
 	letter-spacing: -1.92px;
 }
 
@@ -330,7 +337,7 @@ menu > div{
 	height: 61px;
 	text-align: center;
 	color: #1F3E5A;
-	font: 600 40px/61px 'Overpass-SemiBold';
+	font: 400 40px/61px 'Overpass-Regular';
 	letter-spacing: -1.2px;
 	margin-top: 150px;
 }
@@ -338,7 +345,7 @@ menu > div{
 #designed-content {
 	width: 540px;
 	margin-left: 165px;
-	margin-top: 93px;
+	margin-top: 98px;
 }
 
 /* -------------- section-stateOf -------------- */
@@ -381,7 +388,7 @@ menu > div{
 
 #stateOf-title{
 	height: 61px;
-	font: 500 40px/61px 'Overpass-SemiBold';
+	font: 400 40px/61px 'Overpass-Regular';
 	letter-spacing: -1.2px;
 }
 
@@ -390,7 +397,7 @@ menu > div{
 	height: 112px;
 	font: 300 16px/28px 'Overpass-Light';
 	letter-spacing: 0.5px;
-	margin-top: 8px;
+	margin-top: 16px;
 }
 
 /* -------------- section-final -------------- */
@@ -399,7 +406,7 @@ menu > div{
 	width: 1440px;
 	height: 1025px;
 	background: url("../images/illustration-laptop-desktop.svg") -279px 116px / 889px no-repeat;
-	padding: 299px 0px 0px 735px;
+	padding: 304px 0px 0px 735px;
 	
 }
 
@@ -442,7 +449,7 @@ footer > div{
 
 .footer-link {
 	height: 33px;
-	font: 400 15px/33px 'Ubuntu-Regular';
+	font: 300 15px/33px 'Ubuntu-Light';
 }
 
 .mb-menu-section {
