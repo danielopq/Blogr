@@ -384,7 +384,7 @@ menu > div{
 
 #stateOf-title{
 	height: 61px;
-	font: 400 40px/61px 'Overpass-SemiBold';
+	font: 400 40px/61px 'Overpass-Regular';
 	letter-spacing: -1.2px;
 }
 
@@ -393,7 +393,7 @@ menu > div{
 	height: 112px;
 	font: 300 16px/28px 'Overpass-Light';
 	letter-spacing: 0.5px;
-	margin-top: 5px;
+	margin-top: 16px;
 }
 
 /* -------------- section-final -------------- */
