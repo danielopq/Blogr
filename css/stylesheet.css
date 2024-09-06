@@ -328,7 +328,6 @@ menu>div {
 	display: flex;
 	flex-direction: column;
 	background: url("../images/illustration-editor-desktop.svg") 830px 71px / 880px no-repeat;
-
 }
 
 #designed-title {
@@ -600,11 +599,15 @@ footer>div {
 		width: 318px;
 		height: auto;
 		font: 600 28px/32px 'Overpass-SemiBold';
+		text-align: center;
 	}
 
 	.default-text {
 		width: 318px;
+		font: 300 16px/28px 'Overpass-Light';
+		letter-spacing: 0.5;
 		margin-bottom: 40px;
+		text-align: center;
 	}
 
 	/* ------------- section-designed -------------- */
@@ -614,8 +617,9 @@ footer>div {
 		height: 1262px;
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 		background: url("../images/illustration-editor-mobile.svg") 50% 181px / 326px no-repeat;
-		border: solid 1px red;
+		
 	}
 
 	#designed-title {
@@ -627,90 +631,9 @@ footer>div {
 	}
 
 	#designed-content {
-		width: 540px;
-		margin-left: 165px;
-		margin-top: 98px;
+		width: 327px;
+		margin-left: 0px;
+		margin-top: 410px;
 	}
 
-
-
-
-
-
-
-
-
-	#section-stateOf {
-		width: 480px;
-		height: 825px;
-
-	}
-
-	#stateOf-container {
-		width: inherit;
-		justify-content: flex-end;
-		flex-direction: column;
-		background: url("../images/bg-pattern-circles.svg") 50% -240px / 600px no-repeat;
-
-	}
-
-	#stateOf-container>div {
-		width: 400px;
-		text-align: center;
-	}
-
-	#stateOf-parag {
-		margin-bottom: 100px;
-	}
-
-	#stateOf-image>img {
-		width: 400px;
-	}
-
-	#section-final {
-		width: 480px;
-		height: 1200px;
-		background: url("../images/illustration-laptop-mobile.svg") center 0% / 110% no-repeat;
-		margin-top: 50px;
-	}
-
-	#final-content {
-		width: 410px;
-		height: 420px;
-		margin: 370px auto auto auto;
-		text-align: center;
-	}
-
-	footer {
-		width: 480px;
-		height: 900px;
-		flex-direction: column;
-		align-items: center;
-	}
-
-	#footer-logo {
-		height: 90px;
-		margin-top: 0px;
-	}
-
-	#menuDesktop {
-		display: none;
-	}
-
-	.default-title {
-		font-size: 26pt;
-	}
-
-	.default-text {
-		font-size: 18pt;
-	}
-
-	.footer-section {
-		font-size: 12pt;
-		margin-top: 0px;
-	}
-
-	.footer-sectionTitle {
-		margin-top: 30px;
-	}
 }
