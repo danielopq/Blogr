@@ -39,11 +39,11 @@ const resetMenu = () => {
 const showMobileMenu = () => {
 	if (document.getElementById("mobile-menu-icon").getAttribute("src") == "images/icon-hamburger.svg") {
 		document.getElementById("mobile-menu-icon").setAttribute("src", "images/icon-close.svg");
-		document.getElementById("menu-mobile-menu").style.display = "flex";
+		document.getElementById("menuMobile").style.display = "flex";
 		resetMobileSubmenu();
 	} else {
 		document.getElementById("mobile-menu-icon").setAttribute("src", "images/icon-hamburger.svg");
-		document.getElementById("menu-mobile-menu").style.display = "none";
+		document.getElementById("menuMobile").style.display = "none";
 	}
 }
 
@@ -57,15 +57,15 @@ const showMobileSubMenu = (event) => {
 	switch (subMenuSource) {
 		case 'mb-product':
 			document.getElementById('mb-subproduct').setAttribute("style", "display:block;");
-			document.getElementById('mb-product-arrow').setAttribute("class", "arrow-active");
+			document.getElementById('mb-product').setAttribute("class", "menuSectionBt-mb arrow-active-mb");
 			break;
 		case 'mb-company':
 			document.getElementById('mb-subcompany').setAttribute("style", "display:block;");
-			document.getElementById('mb-company-arrow').setAttribute("class", "arrow-active");
+			document.getElementById('mb-company').setAttribute("class", "menuSectionBt-mb arrow-active-mb");
 			break;
 		case 'mb-connect':
 			document.getElementById('mb-subconnect').setAttribute("style", "display:block;");
-			document.getElementById('mb-connect-arrow').setAttribute("class", "arrow-active");
+			document.getElementById('mb-connect').setAttribute("class", "menuSectionBt-mb arrow-active-mb");
 			break;
 	}
 }
@@ -75,23 +75,23 @@ const showMobileSubMenu = (event) => {
  */
 const resetMobileSubmenu = () => {
 	document.getElementById('mb-subproduct').setAttribute("style", "display:none;");
-	document.getElementById('mb-product-arrow').setAttribute("class", "arrow-inactive");
+	document.getElementById('mb-product').setAttribute("class", "menuSectionBt-mb arrow-inactive-mb");
 	document.getElementById('mb-subcompany').setAttribute("style", "display:none;");
-	document.getElementById('mb-company-arrow').setAttribute("class", "arrow-inactive");
+	document.getElementById('mb-company').setAttribute("class", "menuSectionBt-mb arrow-inactive-mb");
 	document.getElementById('mb-subconnect').setAttribute("style", "display:none;");
-	document.getElementById('mb-connect-arrow').setAttribute("class", "arrow-inactive");
+	document.getElementById('mb-connect').setAttribute("class", "menuSectionBt-mb arrow-inactive-mb");
 }
 
 (() => {
+	document.getElementById("menu").addEventListener('mouseleave', resetMenu, false);
+	document.getElementById("mobile-menu-icon").addEventListener('click', showMobileMenu, false);
 	document.getElementById("menu-product").addEventListener('mouseenter', showMenu, false);
 	document.getElementById("menu-company").addEventListener('mouseenter', showMenu, false);
 	document.getElementById("menu-connect").addEventListener('mouseenter', showMenu, false);
 
-	document.getElementById("menu").addEventListener('mouseleave', resetMenu, false);
-
-	document.getElementById("mobile-menu-icon").addEventListener('click', showMobileMenu, false);
-	document.getElementById("mb-product").addEventListener('click', showMobileSubMenu, false);
-	document.getElementById("mb-company").addEventListener('click', showMobileSubMenu, false);
-	document.getElementById("mb-connect").addEventListener('click', showMobileSubMenu, false);
+	document.getElementById("mb-product").addEventListener('mouseenter', showMobileSubMenu, false);
+	document.getElementById("mb-company").addEventListener('mouseenter', showMobileSubMenu, false);
+	document.getElementById("mb-connect").addEventListener('mouseenter', showMobileSubMenu, false);
+	
 })()
 
