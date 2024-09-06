@@ -406,8 +406,6 @@ menu>div {
 #final-content {
 	width: 540px;
 	height: 416px;
-	font-family: 'Overpass';
-	line-height: 1.4;
 	margin-right: 125px;
 }
 
@@ -680,5 +678,20 @@ footer>div {
 		height: 179px;
 		text-align: center;
 		margin-top: 10px;
+	}
+
+	/* -------------- section-final -------------- */
+
+	#section-final {
+		width: 100vw;
+		height: 1105px;
+		background: url("../images/illustration-laptop-mobile.svg") 50% 79px / 328px no-repeat;
+		padding: 451px 0px 0px 0px;
+	}
+
+	#final-content {
+		width: 327px;;
+		height: 416px;
+		margin: 0px auto;
 	}
 }
