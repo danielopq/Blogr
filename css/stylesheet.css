@@ -690,8 +690,49 @@ footer>div {
 	}
 
 	#final-content {
-		width: 327px;;
+		width: 327px;
+		;
 		height: 416px;
 		margin: 0px auto;
+	}
+
+	/* ################### FOOTER ################### */
+
+	footer {
+		width: 100vw;
+		height: 900px;
+		flex-direction: column;
+		align-items: center;
+		padding: 75px 0px 0px 0px;
+	}
+
+	footer>div {
+		width: 285px;
+		height: auto;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	#footer-logo {
+		height: 40px;
+		background: url("../images/logo.svg") center / 101px no-repeat;
+		margin-bottom: 72px;
+	}
+
+	.footer-sectionTitle {
+		font: 500 18px/33px 'Ubuntu-Medium';
+	}
+
+	.footer-link {
+		font: 300 18px/33px 'Ubuntu-Light';
+	}
+
+	.mb-menu-section {
+		font-family: 'Overpass';
+		font-weight: 600;
+		font-size: 15pt;
+		color: hsl(208, 49%, 24%);
+		margin: 30px auto;
+		text-align: center;
 	}
 }
