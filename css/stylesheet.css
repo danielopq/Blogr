@@ -134,7 +134,7 @@ header>div {
 }
 
 menu {
-	width: 1112px;
+	width: 1117px;
 	height: 48px;
 	display: flex;
 	flex-direction: row;
@@ -149,7 +149,7 @@ menu>div {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	font: 400 16px 'Ubuntu-Regular';
+	font: 700 16px 'Ubuntu-Regular';
 	color: #FFFFFF;
 }
 
@@ -330,7 +330,7 @@ menu>div {
 #header-content h1 {
 	width: 920px;
 	height: 98px;
-	font: 400 64px/98px 'Overpass-Regular';
+	font: 400 64px/98px 'Overpass-SemiBold';
 	letter-spacing: -1.92px;
 }
 
@@ -347,7 +347,7 @@ menu>div {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	margin-top: 44px;
+	margin-top: 41px;
 }
 
 #learn-bt {
