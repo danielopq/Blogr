@@ -38,7 +38,6 @@
 	font-family: 'Ubuntu-Medium';
 	src: url("../fonts/Ubuntu-Medium.woff")format('woff');
 	font-style: normal;
-	font-weight: 500;
 }
 
 @font-face {
@@ -133,7 +132,7 @@ header>div {
 }
 
 menu {
-	width: 1114px;
+	width: 1116px;
 	height: 48px;
 	display: flex;
 	flex-direction: row;
@@ -148,7 +147,7 @@ menu>div {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	font: 500 16px/27px 'Ubuntu-Medium';
+	font: 300 16px/23px 'Ubuntu-Medium';
 	color: #FFFFFF;
 }
 
@@ -156,7 +155,7 @@ menu>div {
 	width: 101px;
 	height: 40px;
 	background: url("../images/logo.svg") center/101px no-repeat;
-	margin: auto 59px auto 5px;
+	margin: auto 55px auto 5px;
 }
 
 #mobile-menu-icon:hover {
@@ -440,7 +439,7 @@ menu>div {
 
 #stateOf-title {
 	height: 61px;
-	font: 300 38px/73px 'Overpass-Semibold';
+	font: 300 39px/70px 'Overpass-Semibold';
 	letter-spacing: -1.2px;
 }
 
