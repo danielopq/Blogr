@@ -147,7 +147,7 @@ menu>div {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	font: 300 16px/23px 'Ubuntu-Medium';
+	font: 300 16px/22px 'Ubuntu-Medium';
 	color: #FFFFFF;
 }
 
@@ -155,7 +155,7 @@ menu>div {
 	width: 101px;
 	height: 40px;
 	background: url("../images/logo.svg") center/101px no-repeat;
-	margin: auto 55px auto 5px;
+	margin: auto 64px auto 5px;
 }
 
 #mobile-menu-icon:hover {
