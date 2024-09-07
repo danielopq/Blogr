@@ -133,7 +133,7 @@ header>div {
 }
 
 menu {
-	width: 1112px;
+	width: 1114px;
 	height: 48px;
 	display: flex;
 	flex-direction: row;
@@ -148,7 +148,7 @@ menu>div {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	font: 500 16px/22px 'Ubuntu-Medium';
+	font: 500 16px/27px 'Ubuntu-Medium';
 	color: #FFFFFF;
 }
 
@@ -156,7 +156,7 @@ menu>div {
 	width: 101px;
 	height: 40px;
 	background: url("../images/logo.svg") center/101px no-repeat;
-	margin: auto 54px auto 10px;
+	margin: auto 59px auto 5px;
 }
 
 #mobile-menu-icon:hover {
@@ -440,7 +440,7 @@ menu>div {
 
 #stateOf-title {
 	height: 61px;
-	font: 300 40px/70px 'Overpass-Semibold';
+	font: 300 38px/73px 'Overpass-Semibold';
 	letter-spacing: -1.2px;
 }
 
@@ -548,6 +548,7 @@ footer>div {
 		width: 82px;
 		height: 32px;
 		background: url("../images/logo.svg") center/82px no-repeat;
+		margin:0px;
 	}
 
 	/* -------------- header/content -------------- */
@@ -560,7 +561,7 @@ footer>div {
 	#header-content h1 {
 		width: inherit;
 		height: 110px;
-		font: 600 35px/1.5 'Overpass-SemiBold';
+		font: 500 36px/1.5 'Overpass-Regular';
 		letter-spacing: -1.08px;
 		padding: 0px 10px;
 	}
