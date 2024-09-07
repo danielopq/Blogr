@@ -134,7 +134,7 @@ header>div {
 }
 
 menu {
-	width: 1117px;
+	width: 1114px;
 	height: 48px;
 	display: flex;
 	flex-direction: row;
@@ -149,7 +149,7 @@ menu>div {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	font: 700 16px 'Ubuntu-Regular';
+	font: 700 16px 'Ubuntu-Bold';
 	color: #FFFFFF;
 }
 
@@ -561,7 +561,7 @@ footer>div {
 	#header-content h1 {
 		width: inherit;
 		height: 110px;
-		font: 600 36px/1.5 'Overpass-SemiBold';
+		font: 600 35px/1.5 'Overpass-SemiBold';
 		letter-spacing: -1.08px;
 		padding: 0px 10px;
 	}
