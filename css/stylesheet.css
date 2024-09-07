@@ -133,7 +133,7 @@ header>div {
 }
 
 menu {
-	width: 1114px;
+	width: 1112px;
 	height: 48px;
 	display: flex;
 	flex-direction: row;
@@ -148,7 +148,7 @@ menu>div {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	font: 700 16px 'Ubuntu-Bold';
+	font: 500 16px/22px 'Ubuntu-Medium';
 	color: #FFFFFF;
 }
 
@@ -156,7 +156,7 @@ menu>div {
 	width: 101px;
 	height: 40px;
 	background: url("../images/logo.svg") center/101px no-repeat;
-	margin-right: 64px;
+	margin: auto 54px auto 10px;
 }
 
 #mobile-menu-icon:hover {
@@ -346,7 +346,7 @@ menu>div {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	margin-top: 41px;
+	margin-top: 40px;
 }
 
 #learn-bt {
@@ -440,7 +440,7 @@ menu>div {
 
 #stateOf-title {
 	height: 61px;
-	font: 300 40px/61px 'Overpass-Semibold';
+	font: 300 40px/70px 'Overpass-Semibold';
 	letter-spacing: -1.2px;
 }
 
