@@ -10,13 +10,12 @@
 
 ## Overview
 
-Frontend development for a blog publishing platform. It is optimized for both desktop and mobile users. The elements have been arranged according to the provided images. The website was built using only HTML and CSS, with no frameworks or libraries used.
+This project involves the frontend development of a responsive landing page designed for a blog publishing platform, optimized for both desktop and mobile users. To enhance navigation and provide a well-organized structure, dropdown submenus have been implemented, offering easy access to different sections and improving user experience. All elements have been carefully positioned and styled to match the provided design references, ensuring a visually cohesive layout. The site is built using only HTML, CSS, and JavaScript, where JavaScript is specifically utilized to control the mobile menu and dropdown functionalities. No frameworks or libraries were used, maintaining a lightweight, custom-coded solution.
 
 ### Screenshot
 
 - [Desktop version](https://github.com/danielopq/Blogr/blob/main/screenshots/desktop.jpg)
 - [Mobile version](https://github.com/danielopq/Blogr/blob/main/screenshots/mobile.jpg)
-
 
 ### Links
 
@@ -24,7 +23,7 @@ Frontend development for a blog publishing platform. It is optimized for both de
 
 ## My process
 
-I created the website entirely for the desktop version. Once all of the elements were in place and met the design requirements, I adapted it to the mobile version using just a CSS media query.
+I initially developed the website entirely for the desktop version. After ensuring that all elements were correctly positioned and aligned with the design requirements, I adapted the site to mobile by applying CSS media queries for a seamless, responsive layout. Once the layout was fully adjusted, I incorporated JavaScript to control the dropdown submenus and the mobile navigation bar, ensuring smooth interaction and accessibility across both desktop and mobile versions.
 
 ### Built with
 
