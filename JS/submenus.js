@@ -1,6 +1,15 @@
 /**
- * Shows subsection menus depending on the clicked button (desktop version).
- * @param {Event} event 
+ * @fileoverview Contains the primary functions to show or hide submenu items 
+ * based on the user's selection in both desktop and mobile versions.
+ * @author Daniel Martinez Duque
+ * @date 2024-08-04
+ */
+
+/**
+ * Displays the appropriate submenu for the selected section (desktop version).
+ * Highlights the selected menu item and adjusts the arrow icon to indicate
+ * an active submenu.
+ * @param {Event} event - The click event triggered by a section button.
  */
 const showMenu = (event) => {
 	let subMenuSource = event.target.attributes["id"].value;
@@ -22,7 +31,8 @@ const showMenu = (event) => {
 }
 
 /**
- * Hides all submenus and resets arrow directions.
+ * Hides all desktop submenus and resets the menu item classes and arrow directions.
+ * This function ensures no submenu is visible when switching between main sections.
  */
 const resetMenu = () => {
 	document.getElementById('submenu-product').setAttribute("style", "display:none;");
@@ -34,22 +44,10 @@ const resetMenu = () => {
 }
 
 /**
- * Expands or hides the mobile menu.
- */
-const showMobileMenu = () => {
-	if (document.getElementById("mobile-menu-icon").getAttribute("src") == "images/icon-hamburger.svg") {
-		document.getElementById("mobile-menu-icon").setAttribute("src", "images/icon-close.svg");
-		document.getElementById("menuMobile").style.display = "flex";
-		resetMobileSubmenu();
-	} else {
-		document.getElementById("mobile-menu-icon").setAttribute("src", "images/icon-hamburger.svg");
-		document.getElementById("menuMobile").style.display = "none";
-	}
-}
-
-/**
- * Shows subsection menus depending on the clicked button (mobile version).
- * @param {Event} event 
+ * Displays the appropriate submenu for the selected section (mobile version).
+ * Highlights the selected menu item and changes the arrow icon to indicate
+ * an active submenu.
+ * @param {Event} event - The click event triggered by a mobile section button.
  */
 const showMobileSubMenu = (event) => {
 	let subMenuSource = event.target.attributes["id"].value;
@@ -71,7 +69,8 @@ const showMobileSubMenu = (event) => {
 }
 
 /**
- * Hides all submenus and resets arrow directions (mobile version).
+ * Hides all mobile submenus and resets the menu item classes and arrow icons.
+ * This ensures no submenu is visible when switching between main sections on mobile.
  */
 const resetMobileSubmenu = () => {
 	document.getElementById('mb-subproduct').setAttribute("style", "display:none;");
@@ -80,6 +79,17 @@ const resetMobileSubmenu = () => {
 	document.getElementById('mb-company').setAttribute("class", "menuSectionBt-mb arrow-inactive-mb");
 	document.getElementById('mb-subconnect').setAttribute("style", "display:none;");
 	document.getElementById('mb-connect').setAttribute("class", "menuSectionBt-mb arrow-inactive-mb");
+}
+
+/**
+ * Toggles the visibility of the mobile menu. Adjusts the menu icon between 
+ * hamburger and close icons and disables page scroll when the menu is open.
+ */
+const showMobileMenu = () => {
+	const visible = document.getElementById("mobile-menu-icon").getAttribute("src") === "images/icon-hamburger.svg";
+	document.getElementById("mobile-menu-icon").setAttribute("src", visible ? "images/icon-close.svg" : "images/icon-hamburger.svg");
+	document.getElementById("menuMobile").style.display = visible ? "flex" : "none";
+	visible && resetMobileSubmenu();
 }
 
 (() => {
@@ -92,6 +102,6 @@ const resetMobileSubmenu = () => {
 	document.getElementById("mb-product").addEventListener('mouseenter', showMobileSubMenu, false);
 	document.getElementById("mb-company").addEventListener('mouseenter', showMobileSubMenu, false);
 	document.getElementById("mb-connect").addEventListener('mouseenter', showMobileSubMenu, false);
-	
+
 })()
 
