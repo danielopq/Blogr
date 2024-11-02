@@ -1,5 +1,3 @@
-
-
 ## Table of contents
 
 - [Overview](#overview)
@@ -7,7 +5,6 @@
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 
@@ -17,8 +14,8 @@ Frontend development for a blog publishing platform. It is optimized for both de
 
 ### Screenshot
 
-- Desktop version: [https://github.com/danielopq/Blogr/blob/main/screenshots/desktop.jpg]
-- Mobile version: [https://github.com/danielopq/Blogr/blob/main/screenshots/mobile.jpg]
+- [Desktop version](https://github.com/danielopq/Blogr/blob/main/screenshots/desktop.jpg)
+- [Mobile version](https://github.com/danielopq/Blogr/blob/main/screenshots/mobile.jpg)
 
 
 ### Links
@@ -37,10 +34,11 @@ I created the website entirely for the desktop version. Once all of the elements
 - Git
 - HTML
 - CSS
+- JavaScript
 
 ## Author
 
 I am a focused and dedicated professional with a strong educational foundation and hands-on experience in programming and web development. My expertise in PHP, SQL, JavaScript, HTML, CSS, JAVA and other modern web technologies enables me to build engaging, efficient, and visually appealing websites that meet both user needs and business goals.
 
-- linkedin - [www.linkedin.com/in/danielmartinezduque]
-
+- linkedin: [www.linkedin.com/in/danielmartinezduque]
+- Personal website: [https://danielmartinez.co.uk]
